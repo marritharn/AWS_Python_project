@@ -1,7 +1,7 @@
 FROM python:3.9
 MAINTAINER Tharun <marritharun863@gmail.com>
-COPY . /EmpApp
-WORKDIR /EmpApp
+COPY . /app
+WORKDIR /app
 EXPOSE 5000
 RUN pip install -r requirements.txt
-ENTRYPOINT [ "python", "app.py" ]
+ENTRYPOINT [ "python", "EmpApp.py" ]
